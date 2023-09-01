@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lecture4</title>
+</head>
+
+<body>
+	<div class="container">
+		<!-- List -->
+		<ul>
+			<li>list1</li>
+			<li>list2</li>
+			<li>list3</li>
+		</ol>
+		
+		<!-- dl : Definition List / Definition Term / Definition Descrkption -->
+		<dl>
+			<dt>린넨 셔츠</dt>
+			<dd>40,000 / 70,000</dd>
+			<dd>시원한 여름</dd>
+		</dl>
+		
+		<table width="500" border="1" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<th scope="col">a</th>
+					<th scope="col">b</th>
+					<th scope="col">c</th>
+				</tr>
+				<tr>
+					<td colspan=2>a1</td>
+					<!-- <td>a2</td> -->
+					<td>a3</td>
+				</tr>
+				<tr>
+					<td rowspan=2>b1</td>
+					<td>b2</td>
+					<td>b3</td>
+				</tr>
+				<tr>
+					<!-- <td>c1</td> -->
+					<td>c2</td>
+					<td>c3</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<section id="login">
+		<div class="title">
+			<h3>히원가입</h3>
+		</div>
+		<div class="content">
+			<form>
+				<ul>
+					<li>아이디 : <input type="text"></li>
+					<li>패스워드 : <input type="password"></li>
+					<li>직업1 : 
+						<label><input type="radio" name="job">학생</label>
+						<label><input type="radio" name="job">대학원생</label>
+						<label><input type="radio" name="job">회사원</label>
+						<label><input type="radio" name="job">자영업</label>
+						<label><input type="radio" name="job">강사</label>
+						<label><input type="radio" name="job">주부</label>
+						<label><input type="radio" name="job">무직</label>
+						<label><input type="radio" name="job">기타</label>
+					</li>
+					<li>직업2 :
+						<select>
+							<option>직업</option>
+							<option>학생</option>
+							<option>대학원생</option>
+							<option>회사원</option>
+							<option>자영업</option>
+							<option>강사</option>
+							<option>주부</option>
+							<option>무직</option>
+							<option>기타</option>
+						</select>
+					</li>
+					<li>취미 :
+						<labe><input type="checkbox">독서</labe>
+						<labe><input type="checkbox">낚시</labe>
+						<labe><input type="checkbox">운동</labe>
+						<labe><input type="checkbox">명상</labe>
+						<labe><input type="checkbox">기타</labe>
+					</li>
+				</ul>
+				<center>
+					<input type="reset" value="Cancel">
+					<input type="submit" value="OK">
+				</center>
+			</form>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	/* background: url("img/rainbow.jpg") no-repeat center center;
+	background-attachment: fixed; */
+	background: url("img/rainbow.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+body {
+	margin: 20px;
+	padding: 20px;
+	line-height: 1;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1em;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+	font-size: 0.875em;
+}
+/* 두번째 */
+.title {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+.rgba {margin: 35px;}
+.rgba .rgba1 {background-color: #f00;}
+.rgba .rgba2 {background-color: #0f0;}
+.rgba .rgba3 {background-color: #00f;}
+
+.hsla {margin: 80px;}
+.hsla .hsla1 {background-color: hsl(120, 100%, 50%);}
+.hsla .hsla2 {background-color: hsl(120, 100%, 75%);}
+.hsla .hsla3 {background-color: hsl(120, 50%, 70%);}
+
+.opacity {margin-top: 80px;}
+.opacity .opacity1 {background-color: #f00; opacity: 1.0;}
+.opacity .opacity2 {background-color: #f00; opacity: 0.5;}
+.opacity .opacity3 {background-color: #f00; opacity: 0.3;}
+
+/* 두번째 */
+.title2 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+.container {margin-top: 35px;}
+.container .description {margin-top: 35px;}
+.example li {margin-top: 80px; font-size: 0.875em;}
+.example li:first-child {margin-top: 0;} /* :last-child, :nth-child(n) */
+.example span {display: block; line-height: 46px;}
+.example .background1 {padding: 15px; height: 150px; background: url("img/round.png") no-repeat right bottom, url("img/pattern.gif") repeat left top; }
+.example .background2 {padding: 15px; height: 150px; text-align: right; border: 1px solid #8ac007; background-image: url("img/round.png"); background-repeat: no-repeat;}
+.example .background3 {padding: 15px; height: 150px; text-align: right; border: 1px solid #8ac007; background-image: url("img/round.png"); background-repeat: no-repeat;background-size: 72px 72px}
+.example .background4 {padding: 15px; height: 150px; text-align: right; border: 1px solid #8ac007; background-image: url("img/round.png"); background-repeat: no-repeat;background-size: auto}
+.example .background5 {padding: 15px; height: 150px; text-align: right; border: 1px solid #8ac007; background-image: url("img/round.png"); background-repeat: no-repeat;background-size: contain;}
+.example .background6 {width: 180px; padding: 15px; height: 150px; text-align: right; border: 1px solid #8ac007; background-image: url("img/round.png"); background-repeat: no-repeat;background-size: cover;}
+.example .title3 {margin: 0; height: 0; font-size: 1.5em, font-weight: 300;}
