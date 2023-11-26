@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lecture17-2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link href="css/style17-4.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="content"><br>
+		<h2 class="title">회원검색</h2>
+		<div class="article">
+			<form>
+				<div class="search_box">
+					<div class="valign">
+						<label for="joindate1" class="label">가입일</label>
+						<input type="text" id="joindate1" value="2023.09.01" name="from" title="시작일">
+						<input type="image" src="img/calendar_icon.gif" alt="calendar">
+						<span class="dash">-</span>
+						<input type="text" id="joindate2" value="2023.09.31" name="to" title="종료일">
+						<input type="image" src="img/calendar_icon.gif" alt="calendar">
+					</div>
+					<div class="valign">
+						<label for="rightClass" class="label">권한구분</label>
+						<select id="rightClass">
+							<option>전체</option>
+						</select>
+						<label for="studyClass" class="label">학습구분</label>
+						<select id="studyClass">
+							<option>전체</option>
+						</select>
+						<label for="memClass" class="label">회원구분</label>
+						<select id="memClass">
+							<option>전체</option>
+						</select>
+					</div>
+					<div class="valign">
+						<label for="keyword1" class="label">키워드</label>
+						<select id="keyword1">
+							<option>이름</option>
+						</select>
+						<input type="text" id="keyword2">
+						<input type="image" src="./img/search_btn1.gif" alt="검색">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

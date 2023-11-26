@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: JavaScript Node Access</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="./css/style211.css" type="text/css">
+<!-- <script language="JavaScript" src="./js/script210.js"></script> -->
+</head>
+
+<body>
+<h1 class="title">basic :: JavaScript Node Access</h1>
+<div class="container">
+    <p>pre study</p>
+    <ul id="tutorial">
+        <li class="html">HTML</li>
+        <li class="css">CSS</li>
+        <li class="css3">CSS3</li>
+        <li class="javascript">JavaScript</li>
+        <li class="jquery">jQuery</li>
+        <li class="blank"></li>
+    </ul>
+    <p id="portfolio">portFolio</p>
+</div>
+<script>
+    let html = document.getElementsByClassName("html")[0];
+    // console.log(html);
+    let tagName = html.tagName;
+    // console.log(tagName);
+    let portfolio = document.getElementById("portfolio");
+    let idName = portfolio.id;
+    // console.log(idName);
+    let className = html.className;
+    // console.log(className);
+    let tutorial = document.getElementById("tutorial");
+    // console.log(tutorial);
+    let liList = tutorial.children;
+    // console.log(liList);
+    for(let i=0; i<liList.length; i++) {
+        /*if(liList[i].className == "css3") {
+            liList[i].style.backgroundColor="#ff0";
+        }*/
+        let name=liList[i].className;
+        // console.log(name.indexOf("as"));
+        
+        if(name.indexOf("as") != -1) {
+            liList[i].style.backgroundColor="#f0f";
+        }
+    }
+    // console.log(tutorial.getAttribute("id"));
+    // portfolio.setAttribute("id", "port-to-folio");
+    // console.log(portfolio.getAttribute("id"));
+    // portfolio.removeAttribute("id");
+    // console.log(portfolio.getAttribute("id"));
+    let pList = document.getElementsByTagName("p");
+    for(let i=0; i<pList.length; i++) {
+        if(pList[i].hasAttribute("id")) {
+            pList[i].style.backgroundColor = "#f00";
+        }
+    }
+</script>
+</body>
+</html>

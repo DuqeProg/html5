@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: JavaScript Node Access</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="./css/style211.css" type="text/css">
+<!-- <script language="JavaScript" src="./js/script210.js"></script> -->
+</head>
+
+<body>
+<h1 class="title">basic :: JavaScript Node Access</h1>
+<div class="container">
+	<ul id="tutorial">
+		<li class="html">에이치티엠엘</li>
+		<li class="css">씨에스에스</li>
+		<li class="css3">씨에스에스3</li>
+		<li class="javascript">자바스크립트</li>
+		<li class="jquery">제이쿼리</li>
+		<li class="blank"></li>
+	</ul>
+	<p id="portfolio">포트폴리오</p>
+</div>
+<script>
+    let html = document.getElementsByClassName("html")[0];
+    // let parent = html.parentNode; // Node Object
+	// let parent = html.parentElement; // Element Object
+	
+	let tutorial = document.getElementById("tutorial");
+	// console.log(tutorial);
+	let ajax = document.createElement("li");
+	ajax.setAttribute("class", "ajax");
+	ajax.innerText="에이작스";
+	// tutorial.appendChild(ajax);
+	let css3 = document.getElementsByClassName("css3")[0];
+	// console.log(css3);
+	tutorial.insertBefore(ajax, css3);
+	let css = document.getElementsByClassName("css")[0];
+	tutorial.removeChild(css);
+
+	let portfolio = document.getElementById("portfolio");
+	// let clone = tutorial.cloneNode(); // fault is default
+	let clone = tutorial.cloneNode(true);
+	tutorial.appendChild(clone);
+</script>
+</body>
+</html>
