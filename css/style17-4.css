@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 20px;
+	padding: 20px;
+	line-height: 1;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1em;
+	background-color: #CCC;
+}
+.title {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+.container {
+	margin-top: 35px;
+}
+
+/*Basic CSS*/
+label {
+	display: inline-block;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 13px;
+	color: #666;
+	cursor: pointer;
+}
+input[type=text] {
+	padding: 5px 10px;
+	line-height: 16px;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 13px;
+	color: #333;
+	border-left: 1px solid #c5c5c5;
+	border-top: 1px solid #c5c5c5;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+select {
+	padding: 3px;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 13px;
+	color: #333;
+	border: 1px solid #c5c5c5;
+}
+#content {
+	margin: 10px;
+	padding: 20px 24px;
+	width: 720px;
+	border: 1px solid #eaeaea;
+	border-radius: 8px;
+}
+#content .title {
+	line-height: 28px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #f58025;
+}
+#content .article .search_box {
+	padding: 20px;
+	background-color: #f6f6f6;
+	border-radius: 6px;
+}
+#content .article .search_box .valign {
+	position: relative;
+	padding: 10px 0;
+}
+#content .article .search_box .valign label,
+#content .article .search_box .valign input[type=text],
+#content .article .search_box .valign input[type=image],
+#content .article .search_box .valign select {
+	vertical-align: middle;
+}
+#content .article .search_box .valign .label {
+	margin-left: 25px;
+	width: 60px;
+}
+#content .article .search_box .valign .label:first-child {
+	margin-left: 0px;
+}
+#content .article .search_box .valign #joindate1 {
+	margin-left: 0;
+	width: 100px;
+}
+#content .article .search_box .valign #joindate2 {
+	width: 90px;
+}
+#content .article .search_box .valign #keyword2 {
+	width: 400px;
+} 
+#content .article .search_box .valign select {
+	width: 120px;
+	
+}

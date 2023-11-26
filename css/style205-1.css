@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 10px;
+    padding: 10px;
+    font-family: "Open Sans" sans-serif;
+}
+.city {
+    float: left;
+    margin: 5px;
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+}

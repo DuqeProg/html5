@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 1em;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+input[type=text] {
+	padding: 9px 10px;
+	vertical-align: middle;
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 0.813em;
+	
+}
+.mytbl {
+	margin: 0 auto;
+	width: 960px;	
+}
+.mytbl .search {
+	padding: 20px 0 25px;
+	text-align: right;
+}
+.mytbl .search input[type=text] {
+	width: 170px;
+}
+.mytbl .search input[type=image] {
+	margin-top: -1px;
+	vertical-align: middle;
+}
+.mytbl table th {
+	padding: 11px 0;
+	font-weight: 300;
+	background-color: #e1e1e1;
+	color: #5b5b5b;
+	border-left: 1px solid #fff;
+}
+.mytbl table th:first-child {
+	border-left: none;
+}
+.mytbl table td {
+	padding: 15px 0;
+	text-align: center;
+	font-size: 0.875em;
+	color: #595b58;
+	border-bottom: 1px solid #e1e1e1;
+}
+.mytbl table td.num {
+	width: 8%;
+}
+.mytbl table td.divide {
+	width: 8%;
+}
+.mytbl table td.title {
+	position: relative;
+	text-align: left;
+}
+.mytbl table td.title a {
+	display: block;
+	position: absolute;
+	top: 24px;
+	width: 90%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-decoration: none;
+	text-indent: 10px;
+	color: #595b58;
+}
+.mytbl table td.date {
+	width: 16%;
+}
+.pagination {
+	margin-top: 50px;
+	text-align: center;
+}
+.pagination > div,
+.pagination > ul,
+.pagination > ul > li {
+	display: inline-block;
+	vertical-align: middle;
+}
+.pagination .btn_prev {
+	margin-right: 15px;
+}
+.pagination .btn_next {
+	margin-left: 15px;
+}
+.pagination .link_page {
+	display: inline-block;
+	padding: 4px 15px;
+	text-decoration: none;
+	font-size: 1.125em;
+	color: #5a5a5a;
+}
+
+@media only screen and (max-width: 960px) {
+	.mytbl {
+		width: 100%;
+	}
+}
+@media only screen and (max-width : 720px) {
+	.mytbl table th.num, 
+	.mytbl table td.num,
+	.pagination {
+		display: none;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.mytbl table th.date,
+	.mytbl table td.date {
+		display: none;
+	}
+}

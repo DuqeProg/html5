@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#box_a {
+    float: left;
+    width: 30%;
+    height: 400px;
+    background-color: #f00;
+}
+#box_b {
+    float: left;
+    width: 50%;
+    height: 400px;
+    background-color: #0f0;
+}
+#box_c {
+    float: right;
+    width: 20%;
+    height: 400px;
+    background-color: #00f;
+}
+
+@media only screen and (max-width: 1024px) {
+    #box_b {
+        float: none;
+        width: auto;
+    }
+    #box_c {
+        float: none;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #box_a {
+        float: none;
+        width: auto;
+    }
+}

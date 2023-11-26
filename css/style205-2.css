@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+h1 {
+	display: none;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+}
+#resolution, #portrait, #landscape {
+    display: none;
+}
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: #0F0;
+    }
+    #landscape {
+        display: block;
+    }
+}
+@media only screen and (orientation: portrait) {
+    body {
+        background-color: #00f;
+    }
+    #portrait {
+        display: block;
+    }   
+}
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: #f00;
+    }
+    #resolution {
+        display: block;
+    }
+}

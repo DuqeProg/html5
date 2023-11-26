@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Reset CSS*/
+/*Basic SCC*/
+input[type=text],
+input[type=password] {
+	padding: 5px 10px;
+	vertical-align: middle;
+	font-family: "Open Sans", sans-serif;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #666;
+}
+select {
+	font-family: "Open Sans", sans-serif;
+	color: #000;
+}
+textarea {
+	padding: 5px 10px;
+	width: 100%;
+	font-family: "Open Sans", sans-serif;
+	color: #000;
+	border: 1px solid #666;
+	box-sizing: border-box;
+	resize: none;
+}
+input[type=button],
+input[type=submit],
+input[type=reset] {
+	padding: 5px 10px;
+	vertical-align: middle;
+	font-family: "Open Sans", sans-serif;
+	color: #000;
+	border: none;
+	cursor: pointer;
+}
+input[type=button] {
+	background-color: #444;
+	color: #ccc;
+}input[type=submit] {
+	background-color: #fff;
+	color: #333;
+}input[type=reset] {
+	background-color: #333;
+	color: #fff;
+}
+
+body {
+	margin: 20px;
+	padding: 20px;
+	line-height: 1;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1em;
+	background-color: #555;
+}
+.title {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+.container {
+	margin-top: 35px;
+}
+.container .section {
+	display: block;
+	padding: 20px 0;
+	margin: 10px 0;
+	font-size: 0.875em;
+	border-bottom: 1px solid ridge(0,0,0,0.2);
+}
+.container .section:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
+.container .section input[type=text],
+.container .section input[type=password] {
+	margin-left: 20px;
+}
+#phone2, #phone3 {
+	margin-left: 0;
+}
+.container .section.radio label, 
+.container .section.checkbox label {
+	display: block;
+	padding: 5px 0;
+} 
+
+/*2nd example*/
+.container2 {
+	margin: 20px;
+	padding: 20px;
+	background-color: #fff;
+}
+.container2 .section2 {
+	display: block;
+	padding: 20px 0;
+	margin: 10px 0;
+	font-size: 0.875em;
+}
+.container2 .section2 label {
+	display: block;
+	padding: 20px 0;
+}
+.container2 .section2 input[type=text],
+.container2 .section2 input[type=submit],
+.container2 .section2 select {
+	width: 100%;
+	padding: 20px 20px;
+	margin: 20px 0px;
+}
+
+.container2 .section2 input[type=submit] {
+	background-color: forestgreen;
+}
+
+
+
+

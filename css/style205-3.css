@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#wrap {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+#box_a {
+    height: 400px;
+    background-color: #f00;
+}
+#box_b {
+    float: left;
+    width: 50%;
+    height: 400px;
+    background-color: #0f0;
+}
+#box_c {
+    float: right;
+    width: 50%;
+    height: 400px;
+    background-color: #00f;
+}
+@media only screen and (max-width: 1000px) {
+    #wrap {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #box_b, #box_c {
+        float: none;
+        width: auto;
+    }
+}
